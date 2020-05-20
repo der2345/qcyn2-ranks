@@ -175,7 +175,7 @@ function displayProfile(d) {
         .css("color", getTextColor2(d));
     $("#infoCompany").text(d.company);
     $("#infoRank").html(getRankInfo(d));
-    $("#infoNote").text(d.note);
+    $("#infoNote").text(d.specialNote);
 }
 
 function getImageSource(d) {
