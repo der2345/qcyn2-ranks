@@ -175,6 +175,7 @@ function displayProfile(d) {
         .css("color", getTextColor2(d));
     $("#infoCompany").text(d.company);
     $("#infoRank").html(getRankInfo(d));
+    $("#infoNote").text(d.note);
 }
 
 function getImageSource(d) {
@@ -391,7 +392,7 @@ function parseLine(row) {
     r.company = row.Company;
     r.letter = row["Level Audition"];
     r.letter2 = row["Re-Evaluation"];
-    r.specialNote = row.note;
+    r.specialNote = row.Note;
     r.ranking = [];
     episodes.forEach(function(episode, i) {
         var rank = getRank(row["ep" + episode]);
